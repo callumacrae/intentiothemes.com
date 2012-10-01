@@ -4,7 +4,7 @@
 	<meta charset="utf8">
 	<title>Intentio</title>
 
-	<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Lato:300italic,300'>
+	<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Lato:100,300,300italic'>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -20,76 +20,74 @@
 		</nav>
 	</header>
 
-	<div id="belowheader">
-		<h2 id="about">We create beautiful, custom forum themes</h2>
-	</div>
+	<h2 id="about" class="tagline">We create beautiful, custom forum themes</h2>
+	<section>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna lectus, porta ut condimentum id, pellentesque sit amet orci. Vestibulum viverra lacinia mi tempor dictum.</p>
+	</section>
 
-	<div id="wrapper">
-		<p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna lectus, porta ut condimentum id, pellentesque sit amet orci. Vestibulum viverra lacinia mi tempor dictum.</p>
+	<section id="work">
+		<h2><span>Our work</span></h2>
 
+		<div class="project">
+			<img src="assets/imgs/moon.png" alt="Moon">
+			<div class="links">
+				<a href="#">Live demo</a>
+				<a href="#">Free download</a>
+			</div>
 
-		<h2 id="work">Our work</h2>
-		<div id="projects">
-			<div class="project">
-				<img src="assets/imgs/moon.png" alt="Moon">
-				<div class="links">
-					<a href="#">Live demo</a>
-					<a href="#">Free download</a>
-				</div>
-
-				<div class="description">
-					<h3>Moon</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tristique venenatis mauris in cursus. Nunc porta tempus odio. Vestibulum facilisis, erat vel dictum imperdiet.</p>
-				</div>
+			<div class="description">
+				<h3>Moon</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tristique venenatis mauris in cursus. Nunc porta tempus odio. Vestibulum facilisis, erat vel dictum imperdiet.</p>
 			</div>
 		</div>
+	</section>
 
+	<section id="team">
+		<h2><span>The team</span></h2>
 
-		<h2 id="team">The team</h2>
-		<div id="members">
-			<div class="member">
-				<span class="avatar">
-					<img src="assets/imgs/avatars/cyril.png" alt="Cyril">
-				</span>
+		<div class="member">
+			<span class="avatar">
+				<img src="assets/imgs/avatars/cyril.png" alt="Cyril">
+			</span>
 
-				<h3>Cyril Mengin</h3>
-				<span class="title">Designer, developer</span>
+			<h3>Cyril Mengin</h3>
+			<span class="title">Designer, developer</span>
 
-				<p>Quisque dictum euismod orci, vel rutrum justo euismod nec. Etiam et blandit nulla. Nam convallis sadittis pharetra.</p>
+			<p>Quisque dictum euismod orci, vel rutrum justo euismod nec. Etiam et blandit nulla. Nam convallis sadittis pharetra.</p>
 
-				<a href="http://cyril.so/">cyril.so</a>
-				<a href="http://twitter.com/cyrilmengin">@cyrilmengin</a>
-			</div>
-			<div class="member">
-				<span class="avatar">
-					<img src="assets/imgs/avatars/callum.png" alt="Callum">
-				</span>
+			<a href="http://cyril.so/">cyril.so</a>
+			<a href="http://twitter.com/cyrilmengin">@cyrilmengin</a>
+		</div>
+		<div class="member">
+			<span class="avatar">
+				<img src="assets/imgs/avatars/callum.png" alt="Callum">
+			</span>
 
-				<h3>Callum Macrae</h3>
-				<span class="title">Manager, developer</span>
+			<h3>Callum Macrae</h3>
+			<span class="title">Manager, developer</span>
 
-				<p>Quisque dictum euismod orci, vel rutrum justo euismod nec. Etiam et blandit nulla. Nam convallis sadittis pharetra.</p>
+			<p>Quisque dictum euismod orci, vel rutrum justo euismod nec. Etiam et blandit nulla. Nam convallis sadittis pharetra.</p>
 
-				<a href="http://lynx.io/">lynx.io</a>
-				<a href="http://twitter.com/callumacrae">@callumacrae</a>
-			</div>
-			<div class="member">
-				<span class="avatar">
-					<img src="assets/imgs/avatars/koen.png" alt="Koen">
-				</span>
+			<a href="http://lynx.io/">lynx.io</a>
+			<a href="http://twitter.com/callumacrae">@callumacrae</a>
+		</div>
+		<div class="member">
+			<span class="avatar">
+				<img src="assets/imgs/avatars/koen.png" alt="Koen">
+			</span>
 
-				<h3>Koen Klaren</h3>
-				<span class="title">Designer, developer</span>
+			<h3>Koen Klaren</h3>
+			<span class="title">Designer, developer</span>
 
-				<p>Quisque dictum euismod orci, vel rutrum justo euismod nec. Etiam et blandit nulla. Nam convallis sadittis pharetra.</p>
+			<p>Quisque dictum euismod orci, vel rutrum justo euismod nec. Etiam et blandit nulla. Nam convallis sadittis pharetra.</p>
 
-				<a href="http://klaren.me/">klaren.me</a>
-				<a href="http://twitter.com/koenklaren">@koenklaren</a>
-			</div>
+			<a href="http://klaren.me/">klaren.me</a>
+			<a href="http://twitter.com/koenklaren">@koenklaren</a>
 		</div>
 
+	<section id="contact">
+		<h2><span>Contact us</span></h2>
 
-		<h2 id="contact">Contact us</h2>
 		<form action="contact.php" method="post">
 			<input type="text" name="name" id="name" placeholder="Name">
 			<input type="text" name="email" id="email" placeholder="Email">
@@ -97,8 +95,7 @@
 
 			<textarea placeholder="Write your message here"></textarea>
 		</form>
-	</div>
-
+	</section>
 
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/script.js"></script>
