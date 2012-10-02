@@ -3,7 +3,6 @@
 
 body {
 	font-family: 'Lato', sans-serif;
-	font-size: 12pt;
 }
 
 header {
@@ -13,7 +12,7 @@ header {
 	h1 {
 		padding-top: 100px;
 		padding-bottom: 70px;
-		font-size: 4em;
+		font-size: 48pt;
 		color: white;
 		text-transform: uppercase;
 		font-weight: 100;
@@ -27,9 +26,16 @@ header {
 			display: inline-block;
 
 			a {
-				margin: 8px;
 				padding: 6px 20px 9px 20px;
-				.dark-button;
+				margin: 8px;
+				background: rgba(0, 0, 0, 0.3);
+				border: 1px #0a0a0b solid;
+				.border-radius(3px);
+
+				color: #505050;
+				text-decoration: none;
+
+				box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.04);
 			}
 		}
 	}
@@ -39,7 +45,7 @@ h2 {
 	text-align: center;
 
 	text-transform: uppercase;
-	font-size: 1.4em;
+	font-size: 18pt;
 	font-weight: 300;
 	color: #494949;
 }
@@ -52,13 +58,8 @@ h2.tagline {
 	margin-bottom: 20px;
 
 	text-transform: none;
-	font-size: 1.8em;
-}
-
-p {
-	color: #515151;
-	text-align: justify;
-	line-height: 1.8em;
+	font-size: 22pt;
+	font-weight: 300;
 }
 
 section {
@@ -78,6 +79,13 @@ section {
 		bottom: -11px;
 
 		background: #fff;
+	}
+
+	p {
+		font-size: 12pt;
+		color: #515151;
+		text-align: justify;
+		line-height: 1.2;
 	}
 
 	.about {
@@ -196,7 +204,9 @@ section {
 @media all and (max-width: 650px) {
 	header {
 		h1 {
-			padding: 20px 0 10px;
+			padding-top: 50px;
+			padding-bottom: 40px;
+			font-size: 38pt;
 		}
 
 		nav ul {
@@ -209,11 +219,11 @@ section {
 			margin: -6px auto;
 
 			a {
+				border-width: 0;
+				box-shadow: none;
 				display: block;
-				margin: 20px 50px 0;
-				padding: 10px;
+				background: rgba(0, 0, 0, 0.5);
 				color: lighten(#505050, 10%);
-				font-size: 1.4em;
 			}
 		}
 	}
@@ -225,6 +235,10 @@ section {
 	section {
 		width: 90%;
 		margin: 0 auto;
+
+		h2 {
+			margin: 30px;
+		}
 
 		.member {
 			margin: 0 auto;
