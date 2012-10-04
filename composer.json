@@ -1,0 +1,29 @@
+{
+	"name": "intentiothemes/intentiothemes.com",
+	"description": "The source code for the Intentio website",
+	"license": "CC-BY-NC-ND-3.0",
+	"homepage": "http://intentiothemes.com/",
+	"authors": [
+		{
+			"name": "Callum Macrae",
+			"email": "callum@intentiothemes.com",
+			"homepage": "http://lynx.io/",
+			"role": "Developer"
+		},
+		{
+			"name": "Koen Klaren",
+			"email": "koen@intentiothemes.com",
+			"homepage": "http://klaren.me/",
+			"role": "Designer"
+		}
+	],
+	"require": {
+		"amazonwebservices/aws-sdk-for-php": "*"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/intentiothemes/intentiothemes.com"
+		}
+	]
+}
