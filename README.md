@@ -1,6 +1,6 @@
 # intentiothemes/intentiothemes.com
 
-The source code for Intentio website: http://intentiothemes.com/
+The source code for Intentio website: http://intentiothemes.com/ (currently not up)
 
 ## Installation
 
