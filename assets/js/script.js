@@ -30,3 +30,11 @@ $('form').submit(function (e) {
 		p.text('Please complete all inputs').show();
 	}
 });
+
+$('.avatar').click(function () {
+	var url = $(this).parent().find('a:first').attr('href');
+
+	if (document.width <= 650) {
+		window.location = url;
+	}
+});
