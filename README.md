@@ -11,4 +11,4 @@ curl -s http://getcomposer.org/installer | php
 php composer.phar install
 ```
 
-Then, copy `contactConfig.sample.php` to `contactConfig.php` and put in the topic arn, the access key ID, and the secret key.
+Then, copy `config.sample.php` to `config.php` and put in the topic arn, the access key ID, and the secret key.

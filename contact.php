@@ -1,7 +1,7 @@
 <?php
 
 require('vendor/autoload.php');
-require('contactConfig.php');
+require('config.php');
 
 header('Content-type: application/json');
 
