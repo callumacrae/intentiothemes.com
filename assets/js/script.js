@@ -38,3 +38,28 @@ $('.avatar').click(function () {
 		window.location = url;
 	}
 });
+
+(function () {
+	var masoned = false,
+		masonry = function () {
+			$('#members_grid').masonry({
+				itemSelector: '.member',
+				columnWidth: 250
+			});
+
+			masoned = true;
+		};
+
+	if (document.width > 650) {
+		masonry();
+	}
+
+	$(window).resize(function () {
+		if (document.width > 650 && !masoned) {
+			masonry();
+		} else if (document.width <= 650 && masoned) {
+			$('#members_grid').masonry('destroy');
+			masoned = false;
+		}
+	});
+})();
