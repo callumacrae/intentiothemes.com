@@ -26,6 +26,7 @@
 }
 
 
+// Wide design (more than 650 pixels wide)
 @media all and (min-width: 650px) {
 	.project {
 		position: relative;
@@ -40,11 +41,7 @@
 			position: relative;
 			z-index: 10;
 
-			-webkit-transition: all 300ms ease-in-out;
-			   -moz-transition: all 300ms ease-in-out;
-			    -ms-transition: all 300ms ease-in-out;
-			     -o-transition: all 300ms ease-in-out;
-			        transition: all 300ms ease-in-out;
+			.transition(300ms);
 		}
 
 		&:hover img {
@@ -74,6 +71,7 @@
 	}
 }
 
+// Narrow design (less than 650 pixels wide)
 @media all and (max-width: 650px) {
 	.project {
 		position: relative;

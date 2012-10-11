@@ -4,6 +4,14 @@
 	border-radius: @radius;
 }
 
+.transition (@duration, @thing: all) {
+	-webkit-transition: @thing @duration ease-in-out;
+	   -moz-transition: @thing @duration ease-in-out;
+	    -ms-transition: @thing @duration ease-in-out;
+	     -o-transition: @thing @duration ease-in-out;
+		transition: @thing @duration ease-in-out;
+}
+
 .dark-button() {
 	color: #505050;
 	text-decoration: none;
@@ -12,5 +20,14 @@
 	background: rgba(0, 0, 0, 0.3);
 	border: 1px #0a0a0b solid;
 	.border-radius(3px);
-	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.04);
+
+	-webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.04);
+	   -moz-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.04);
+	        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.04);
+
+	.transition(200ms);
+
+	&:hover {
+		background: rgb(0, 0, 0);
+	}
 }
