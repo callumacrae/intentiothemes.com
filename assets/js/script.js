@@ -50,14 +50,14 @@ $('.avatar').click(function () {
 			masoned = true;
 		};
 
-	if (document.width > 650) {
+	if (document.body.clientWidth > 650) {
 		masonry();
 	}
 
 	$(window).resize(function () {
-		if (document.width > 650 && !masoned) {
+		if (document.body.clientWidth > 650 && !masoned) {
 			masonry();
-		} else if (document.width <= 650 && masoned) {
+		} else if (document.body.clientWidth <= 650 && masoned) {
 			$('#members_grid').masonry('destroy');
 			masoned = false;
 		}
